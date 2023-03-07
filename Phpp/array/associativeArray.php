@@ -1,4 +1,4 @@
-//*associative array
+//****associative array
 
 <?php
 $edades = array(
