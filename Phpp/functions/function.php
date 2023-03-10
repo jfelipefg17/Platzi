@@ -1,5 +1,7 @@
+/**
+* *typical funtion with out parameters
+*/
 <?php
-
 
 function get_dog() {
 
