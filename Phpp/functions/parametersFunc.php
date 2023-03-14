@@ -1,8 +1,6 @@
-/**
-**function with parameteres
-*/
-
 <?php
+
+//*function with parameteres
 
 function platzi_legend($platzi_rank) {
 

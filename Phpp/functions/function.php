@@ -1,7 +1,6 @@
-/**
-* *typical funtion with out parameters
-*/
 <?php
+//* typical funtion with out parameters
+
 
 function get_dog() {
 
