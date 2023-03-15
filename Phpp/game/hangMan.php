@@ -36,7 +36,7 @@ if ( str_contains($choosen_word, $player_letter) ) {
 }
 else {
   $attempts++;
-  echo "incorrect letter te quedan " . (MAX_ATTEMPS - $attempts) . " attempts.";
+  echo "incorrect letter te quedan " . (MAX_ATTEMPS - $attempts) . "  attempts.";
 }
 
 echo "\n";
