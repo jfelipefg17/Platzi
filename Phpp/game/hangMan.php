@@ -1,7 +1,8 @@
 <?php
 
 //* clean the screen 
-//* PHP_OS to know what operative system have the person that is play
+//* PHP_OS to know what operative system have the person that is playing
+
 //* system to ride in his terminal that commands
 function clear() {
 
