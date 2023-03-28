@@ -1,20 +1,17 @@
 <?php 
 
-$words = array("sol", "luna", "cielo");
-$messyWords= array();
+$words = array("moon", "soccer", "playing");
+$form = "<form action ='analysis.php'>";
 
-for($i=0; $i<count($words); $i++){
-  $messyWords[$i] = str_shuffle($words[$i]);
+//* makes messy words
+
+for($i = 0; $i < count($words); $i++){
+  $form .= "The word: " . str_shuffle($words[$i]) ." ". "<input type='text' name='word". $i ."'>" . "<br>";
 }
 
-print_r($messyWords);
-echo "
-<form action ='analysis.php'>
-  <input type='text' name='palabra0'>
-  <input type='text' name='palabra1'>
-  <input type='text' name='palabra2'>
-</form>
-";
+$button = "<button type='submit'>Send</button>";
+$formClose = "</form>";
 
-echo "\n";
+
+echo $form . $button . $formClose;
 ?>

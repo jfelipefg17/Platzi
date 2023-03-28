@@ -1,23 +1,14 @@
 <?php
 
 
-$words = array("sol", "luna", "cielo");
+$words = array("moon", "soccer", "playing");
 
-if($_REQUEST["palabra0"] == $words[0]) {
-  echo "The word is correct";
-}else {
-  echo "The word is incorrect, the word is: " . $words[0];
-}
-
-if($_REQUEST["palabra1"] == $words[1]) {
-  echo "The word is correct";
-}else {
-  echo "The word is incorrect, the word is: " . $words[1];
-}
-
-if($_REQUEST["palabra2"] == $words[2]) {
-  echo "The word is correct";
-}else {
-  echo "The word is incorrect, the word is: " . $words[2];
+for ($i=0; $i <count($words) ; $i++) { 
+  if($_REQUEST["word" .$i] == $words[$i]) {
+    echo "The word is correct. " . "<br>";
+    
+  }else {
+    echo "The word is incorrect, the word is: " . $words[$i] . "<br>";
+  }
 }
 ?>
